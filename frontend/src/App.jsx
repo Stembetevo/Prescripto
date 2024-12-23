@@ -1,4 +1,3 @@
-
 import { Route,Routes } from 'react-router-dom'
 import './App.css'
 import Home from './pages/Home'
@@ -8,10 +7,10 @@ import About from './pages/About'
 import Contact from './pages/Contact'
 import Appointments from './pages/Appointments'
 import Profile from './pages/Profile'
-import myAppointment from './pages/myAppointment'
+import checkUp from './pages/checkUp'
 import Footer from './components/Footer'
-import Header from './components/Header'
 import Navbar from './components/Navbar'
+
 
 function App() {
   return (
@@ -26,7 +25,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/appointment/docId" element={<Appointments />} />
         <Route path="/profile" element={<Profile/>} />
-        <Route path="/myappointment" element={<myAppointment/>} />
+        <Route path="/checkup" element={<checkUp/>} />
       </Routes>
       <Footer />
     </div>
